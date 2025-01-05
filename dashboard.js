@@ -11,3 +11,19 @@ function hello(){
         console.error('An error occured ', error)
     }
 })();
+
+// promise
+
+let promise = new Promise ((res, rej)=>{
+    let data = 'hellooooo'
+
+    if(data){
+        res({ status: 'data fetched', message: data })
+    }else{
+        rej('data couldnt fetched')
+    }
+})
+
+promise
+ .then((data)=> console.log(data.message))
+ .catch(error=> console.log('An error occured', error))
