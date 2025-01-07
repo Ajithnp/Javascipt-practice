@@ -59,3 +59,16 @@ function Constructor(name, place, designation){
 const person1 = new Constructor('ajith', 'banglore', 'software engeener')
 person1.getInfo()
 
+
+// factory function
+function* generator(){
+    yield 'hello'
+    yield 'hii'
+}
+
+const gen = generator()
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+
