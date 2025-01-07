@@ -71,4 +71,9 @@ const gen = generator()
 console.log(gen.next().value);
 console.log(gen.next().value);
 
+// call back function
 
+function callback(){
+    co
+    
+}
